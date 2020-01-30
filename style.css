@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 h1 {
   text-align: center;
   text-shadow: 0 0 5px blue;
@@ -6,3 +10,82 @@ h1 {
 body {
   background-color: lightblue;
 }
+
+.main-container-for-header {
+  display: flex;
+  margin-top: 6px;
+  background-color: lightcoral;
+  justify-content: space-between;
+  align-content: space-around;
+}
+
+.first {
+  display: flex;
+  flex-direction: column;
+}
+.second {
+  display: flex;
+  flex-direction: column;
+  order: -1;
+}
+.third {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-form {
+  background-color: lightgrey;
+}
+.form-row {
+  display: flex;
+  padding: 10px 0;
+}
+.form-row label {
+  padding-right: 10px;
+}
+.form-row input {
+  flex-grow: 1;
+}
+.main-container-for-three {
+  background-color: beige;
+  margin-top: 20px;
+  display: flex;
+}
+
+.main-container-for-header h2,
+.main-container-for-header p {
+  padding: 10px 0;
+}
+
+.main-column {
+  flex-grow: 4;
+  order: 2;
+}
+.sidebar-one {
+  flex-grow: 1;
+  order: 1;
+}
+.sidebar-two {
+  flex-grow: 2;
+  order: 3;
+}
+.call-outs-container{
+  max-width: 1400px;
+  margin:40px auto 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+.call-out {
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 20px;
+  flex: 1;
+  flex-basis: 30%;
+  
+}
+
+.call-out:nth-child(1){background-color: lightpink}
+.call-out:nth-child(2){background-color: rgb(202, 111, 198)}
+.call-out:nth-child(3){background-color: rgb(177, 167, 176)}
